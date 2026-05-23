@@ -72,10 +72,6 @@ class cache_sim_t
   bool log;
 
   void init();
-
-  //這邊開始是我新增的內容
-  uint8_t* plru_trees;
-
 };
 
 class fa_cache_sim_t : public cache_sim_t

@@ -6,19 +6,12 @@
 #include <iostream>
 #include <iomanip>
 
-// 假設參數設定為 sets = 16, ways = 4, linesz = 64
-// 則 linesz 是最小單位 (幾 byte)
-// 每個 set 中會有 4個ways 共 64 * 4 = 256 byte
-// 共 16 個 set ，總共是 16 * 256 = 4096 byte
-
-// 這一段是建構子
 cache_sim_t::cache_sim_t(size_t _sets, size_t _ways, size_t _linesz, const char* _name)
 : sets(_sets), ways(_ways), linesz(_linesz), name(_name), log(false)
 {
   init();
 }
 
-// 這是一段呼叫報錯的 function
 static void help()
 {
   std::cerr << "Cache configurations must be of the form" << std::endl;
@@ -44,10 +37,9 @@ cache_sim_t* cache_sim_t::construct(const char* config, const char* name)
   return new cache_sim_t(sets, ways, linesz, name);
 }
 
-
 void cache_sim_t::init()
 {
-  if (sets == 0 || (sets & (sets-1)))   // 這邊是在看它們是不是 2 的次方
+  if (sets == 0 || (sets & (sets-1)))
     help();
   if (ways == 0 || (ways & (ways-1)))
     help();
