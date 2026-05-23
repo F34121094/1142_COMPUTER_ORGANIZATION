@@ -1,0 +1,3 @@
+SETS  = 16
+WAYS  = 4
+BYTES = 64

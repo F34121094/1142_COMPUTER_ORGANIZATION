@@ -1,0 +1,25 @@
+L 10,4 miss 
+S 18,4 hit 
+L 20,4 miss 
+S 28,4 hit 
+S 50,4 miss 
+L 0,4 miss 
+S 40,4 miss 
+L 0,4 hit 
+L 80,4 miss eviction 
+S 80,4 hit 
+L 0,4 hit 
+S c0,4 miss eviction 
+L 40,4 miss eviction 
+S 40,4 hit 
+L 80,4 miss eviction 
+S 100,4 miss eviction 
+hits:6 misses:10 evictions:5
+PA3$ Bytes Read:            32
+PA3$ Bytes Written:         32
+PA3$ Read Accesses:         8
+PA3$ Write Accesses:        8
+PA3$ Read Misses:           6
+PA3$ Write Misses:          4
+PA3$ Writebacks:            4
+PA3$ Miss Rate:             62.500%

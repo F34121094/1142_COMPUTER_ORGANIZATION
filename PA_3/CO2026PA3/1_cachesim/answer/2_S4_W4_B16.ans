@@ -1,0 +1,38 @@
+L 20,4 miss 
+S 28,4 hit 
+L 60,4 miss 
+S 68,4 hit 
+S a0,4 miss 
+L a8,8 hit 
+S e0,4 miss 
+L e0,4 hit 
+S e8,4 hit 
+S e0,4 hit 
+L 1e7,4 miss eviction 
+S 86a,4 miss eviction 
+S faf,8 miss eviction 
+S faf,8 hit 
+S 11eee,8 miss eviction 
+S 878ef,8 miss eviction 
+L 0,4 miss 
+S 40,4 miss 
+L 80,4 miss 
+S c0,4 miss 
+L 0,4 hit 
+L 100,4 miss eviction 
+S 100,4 hit 
+L 0,4 hit 
+S 140,4 miss eviction 
+L 40,4 miss eviction 
+S 40,4 hit 
+L 80,4 miss eviction 
+S 180,4 miss eviction 
+hits:11 misses:18 evictions:10
+PA3$ Bytes Read:            52
+PA3$ Bytes Written:         84
+PA3$ Read Accesses:         12
+PA3$ Write Accesses:        17
+PA3$ Read Misses:           8
+PA3$ Write Misses:          10
+PA3$ Writebacks:            7
+PA3$ Miss Rate:             62.069%
